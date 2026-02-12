@@ -1,8 +1,8 @@
 class Juliet < Formula
   desc "Minimal CLI wrapper for Claude Code and Codex with prompt-driven workflows"
   homepage "https://github.com/seezatnap/juliet"
-  url "https://github.com/seezatnap/juliet/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "3ee9c25dc176ab3c4384656ce9e6eb604e4c1737126cf96d637aff7dcd475fc8"
+  url "https://github.com/seezatnap/juliet/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "c83df1680cc03174b68979ff1bb71f032e02a2d77e4a26b31832bc5f2878ce3f"
   license "MIT"
 
   depends_on "rust" => :build

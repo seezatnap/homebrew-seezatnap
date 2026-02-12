@@ -8,6 +8,24 @@ class Swarm < Formula
   depends_on "rust" => :build
 
   def install
+    if OS.linux?
+      system_ld = if File.executable?("/usr/bin/ld")
+        "/usr/bin/ld"
+      elsif File.executable?("/bin/ld")
+        "/bin/ld"
+      end
+
+      odie "Unable to locate system ld linker" if system_ld.nil?
+
+      # Prefer the host linker over Homebrew binutils ld (SFrame incompatibility on newer Ubuntu).
+      (buildpath/"ld").write <<~SH
+        #!/bin/sh
+        exec "#{system_ld}" "$@"
+      SH
+      chmod 0755, buildpath/"ld"
+      ENV.prepend_path "PATH", buildpath
+    end
+
     system "cargo", "install", *std_cargo_args
   end
 

@@ -1,8 +1,8 @@
 class AgentBudget < Formula
   desc "Small Rust CLI that reports weekly remaining usage for Codex and Claude"
   homepage "https://github.com/seezatnap/agent-budget"
-  url "https://github.com/seezatnap/agent-budget/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "03e8c8a31eafd9a7cf74473047030d1b850f28ecae22dc5757dc56281c3b069d"
+  url "https://github.com/seezatnap/agent-budget/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "a2ee8b26fbeefdd2685cf5c99c9dcd3b051e99d2f5869474a6bea63f4f77d5cc"
   license "MIT"
 
   depends_on "rust" => :build

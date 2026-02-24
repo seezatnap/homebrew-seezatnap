@@ -1,8 +1,8 @@
 class JulietscriptLint < Formula
   desc "Lint JulietScript files against the repository specification"
   homepage "https://github.com/seezatnap/julietscript"
-  url "https://github.com/seezatnap/julietscript/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "cecdc3ed876499d8c913d8213bf18f7ac4e4b8eb93da5f219f0f4f082df38e12"
+  url "https://github.com/seezatnap/julietscript/archive/refs/tags/v0.2.2.tar.gz"
+  sha256 "aa5f7bde7142370ba6d1bfae7d1ee5986c85218dda917ce2e40b031aa5746ab1"
   license "MIT"
 
   depends_on "rust" => :build

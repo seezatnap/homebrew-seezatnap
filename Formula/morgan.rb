@@ -1,8 +1,8 @@
 class Morgan < Formula
   desc "JulietScript generation and Juliet run orchestrator"
   homepage "https://github.com/seezatnap/morgan"
-  url "https://github.com/seezatnap/morgan/archive/refs/tags/v0.6.1.tar.gz"
-  sha256 "3dea18f3a45004fe65460420aebf38a6dd9401eb6eb43f2773566deb490fd131"
+  url "https://github.com/seezatnap/morgan/archive/refs/tags/v0.7.0.tar.gz"
+  sha256 "e7c73f98068683fdb8cc921d355ae8638e93aee9daae27261488278de9041564"
   license "MIT"
 
   depends_on "rust" => :build

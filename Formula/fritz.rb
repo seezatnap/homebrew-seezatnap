@@ -1,8 +1,8 @@
 class Fritz < Formula
   desc "Orchestrate Juliet runs from JulietScript specs"
   homepage "https://github.com/seezatnap/fritz"
-  url "https://github.com/seezatnap/fritz/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "dbf04fab08cad4615cb5051e0bb8ce0a79758143afeffe96fabd2986f353c568"
+  url "https://github.com/seezatnap/fritz/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "3a090a328b8f08f7995e727d0392e7897ae4fa0547e67a0498b3aab185e9fedf"
   license "MIT"
 
   depends_on "rust" => :build
